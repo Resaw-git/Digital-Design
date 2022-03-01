@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(33,37,41);
+}
+
+h1 {
+    text-align: center;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+pre {
+    border-left: 6px solid #005282;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0 0 24px;
+    max-width: 100%;
+    overflow: auto;
+    padding: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    background-color: #333;
+}
+
+p {
+    margin-bottom: 24px;
+}
+
+
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-column-gap: 20px;
+}
+
+.header {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.aside {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    align-self: start;
+    justify-self: end;
+
+}
+
+.article {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.image {
+    text-align: center;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-size: 1rem;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.link, .link:hover, link:visited  {
+    color: black;
+}
+
+.gradient {
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 70%, rgba(0,0,0,1) 100%);
+}
+
+.footer {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer p {
+    margin-bottom: 0px;
+    color: #fff;
+}
+
+.footer a, .footer a:hover, .footer a:visited {
+    color: #fff;
+}
+
+.btn-to-top {
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 10px;
+    bottom: 15%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #0783DB;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+
+
+
+
+@media (max-width: 1150px) {
+    .main {
+        display: block;
+    }
+    .footer {
+        display: block;
+    }
+    .footer .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 374px)  {
+    .title {
+        font-size: 1.5rem;
+    }
+}
